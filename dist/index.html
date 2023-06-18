@@ -399,7 +399,7 @@
       <div class="max-w-md flex flex-col gap-8 mt- items-start">
         <h2 class="text-3xl relative inline-block after:contents-[''] after:absolute after:w-14 after:h-1 after:bg-primary after:top-[110%] after:left-0">Why FutureLearn?</h2>
       </div>
-      <div class="microcredentials-items grid grid-cols-3 gap-8 grid-area">
+      <div class="microcredentials-items grid grid-cols-3 gap-8">
         <div class="shadow-md p-5 area-a">
           <i class="fa-solid fa-heart text-4xl text-primary"></i>
           <h3 class="text-xl font-semibold">Learn together</h3>
@@ -716,8 +716,14 @@
     const microcredentials = document.querySelector('.microcredentials-items')
     
     window.addEventListener('DOMContentLoaded', () => {
-      if(window.innerWidth < 768){
+      if(window.innerWidth <= 768 && window.innerWidth > 640){
         menuLinks.classList.add('hidden')
+        microcredentials.classList.add('grid-area-md')
+      } else if(window.innerWidth <= 640){
+        menuLinks.classList.add('hidden')
+        microcredentials.classList.add('grid-area-sm')
+      } else if(window.innerWidth > 768) {
+        microcredentials.classList.add('grid-area')
       }
     })
 
@@ -731,16 +737,12 @@
         microcredentials.classList.remove('grid-area-md')
         microcredentials.classList.remove('grid-area-sm')
         microcredentials.classList.add('grid-area')
-      }
-
-      if(window.innerWidth < 768){
+      }else if(window.innerWidth <= 768 && window.innerWidth > 640){
         menuLinks.classList.add('hidden')
         microcredentials.classList.remove('grid-area')
         microcredentials.classList.remove('grid-sm')
         microcredentials.classList.add('grid-area-md')
-      }
-
-      if(window.innerWidth < 640){
+      } else if(window.innerWidth < 640){
         menuLinks.classList.add('hidden')
         microcredentials.classList.remove('grid-area')
         microcredentials.classList.remove('grid-area-md')
