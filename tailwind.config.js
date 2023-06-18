@@ -9,7 +9,8 @@ module.exports = {
       white: '#FFFFFF',
       yellow: '#FFFF00',
       gray: '#555555',
-      lightGray: '#CCCCCC'
+      lightGray: '#CCCCCC',
+      yellow_1: '#FFAA00'
     },
     extend: {},
   },
