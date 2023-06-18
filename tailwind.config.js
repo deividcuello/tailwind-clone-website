@@ -10,7 +10,9 @@ module.exports = {
       yellow: '#FFFF00',
       gray: '#555555',
       lightGray: '#CCCCCC',
-      yellow_1: '#FFAA00'
+      darkGray: '#4A4D55',
+      yellow_1: '#FFAA00',
+      footer: '#3A343A'
     },
     extend: {},
   },

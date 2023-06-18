@@ -36,5 +36,9 @@
     .btn-outline{
         @apply text-primary p-2 border border-primary mt-2 font-bold
     }
+
+    li{
+        @apply list-none
+    }
     
 }

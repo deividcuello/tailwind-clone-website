@@ -13,12 +13,20 @@
   <header class="p-2">
     <nav>
       <ul class="container mx-auto flex justify-between items-center">
-        <div>
-          <a href="#"><h1 class="text-4xl font-semibold">Logo</h1></a>
+        <div class="flex items-center justify-between gap-10">
+          <a href="#"><h1 class="text-3xl font-semibold">Loop.io</h1></a>
+          <ul class="flex gap-10 items-center justify-between">
+            <li><a href="#" class="text-primary text-lg font-semibold">Subjects <i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#" class="text-primary text-lg font-semibold">Courses <i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#" class="text-primary text-lg font-semibold">FutureLearn for business</a></li>
+          </ul>
         </div>
         <div class="flex gap-8 items-center">
-          <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer"></i>
-          <i class="fa-solid fa-bars text-xl cursor-pointer"></i>
+          <div class="border border-gray">
+            <input type="text" placeholder="Search" class="p-1">
+            <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer bg-primary p-2 text-white"></i>
+          </div>
+          <i class="fa-solid fa-bars text-xl cursor-pointer scale-0 absolute"></i>
           <button class="text-primary font-semibold">Sign in</button>
           <button class="btn">Register</button>
         </div>
@@ -27,7 +35,7 @@
   </header>
 
   <div class="bg-secundary w-full h-[30rem] p-2">
-    <div class="container h-full mx-auto">
+    <div class="z-[1] container relative h-full mx-auto after:contents-[''] after:bg-[url('./assets/stepping_up.svg')] after:absolute after:inline-block after:w-96 after:h-96 after:bg-no-repeat after:bg-contain after:top-0 after:right-0 after:z-[-1] after:brightness-50">
       <div class="h-full grid grid-cols-1 md:grid-cols-2 justify-items-start md:justify-items-center items-center">
         <div class="self-center">
           <h2 class="text-white text-[6vw] uppercase font-bold leading-none">Fast-track<br>your <span class="text-primary">career</span><br></h2>
@@ -516,21 +524,21 @@
           <h2 class="text-3xl relative text-white mx-auto inline-block after:contents-[''] after:absolute after:w-14 after:h-1 after:bg-primary after:top-[110%] after:left-1/2 after:-translate-x-1/2">Explore top subject</h2>
         </div>
         <div class="grid grid-cols-3 gap-10 mt-7">
-          <div class="bg-white flex flex-col p-5 rounded gap-5">
+          <div class="bg-white flex flex-col justify-between p-5 rounded gap-5">
             <div class="flex flex-col gap-3">
               <h3 class="text-primary font-semibold text-xl">Business & Management</h3>
               <p>Further your career with an online communication, leadership, or business management course.</p>
             </div>
             <i class="fa-solid fa-chevron-right text-end"></i>
           </div>
-          <div class="bg-white flex flex-col p-5 rounded gap-5">
+          <div class="bg-white flex flex-col justify-between  p-5 rounded gap-5">
             <div class="flex flex-col gap-3">
               <h3 class="text-primary font-semibold text-xl">Healthcare & Medicine</h3>
               <p>Get vital skills and training in everything from Parkinson’s disease to nutrition, with our online healthcare courses.</p>
             </div>
             <i class="fa-solid fa-chevron-right text-end"></i>
           </div>
-          <div class="bg-white flex flex-col p-5 rounded gap-5">
+          <div class="bg-white flex flex-col justify-between p-5 rounded gap-5">
             <div class="flex flex-col gap-3">
               <h3 class="text-primary font-semibold text-xl">Teaching</h3>
               <p>Support your professional development and learn new teaching skills and approaches.</p>
@@ -542,9 +550,165 @@
     </div>
   </section>
 
+  <section id="avg-rating">
+    
+    <div class="container mx-auto mt-14 px-2">
+      <div class="max-w-md flex flex-col gap-8 items-start">
+        <h2 class="text-3xl relative inline-block after:contents-[''] after:absolute after:w-14 after:h-1 after:bg-primary after:top-[110%] after:left-0">The latest <span class="font-bold">news and views<br></span>from the world of learning</h2>
+        <p class="mt-1">Ideas, insights, inspiration and opinion from our expert educators.</p>
+        <button class="btn">Read more stories</button>
+      </div>
+      <div class="grid grid-cols-1 items-start sm:grid-cols-2 md:grid-cols-4 gap-6 mt-[2rem]">
+        <div class="h-96 relative">
+          <img src="./assets/team_1.jpg" class="w-full h-full object-cover">
+          <div class=" absolute bottom-2 left-2 right-2">
+            <h3 class="bg-white font-semibold text-xl inline">What is a sustainable business?</h3>
+          </div>
+        </div>
+        <div class="h-96 relative">
+          <img src="./assets/team_2.jpg" class="w-full h-full object-cover">
+          <div class=" absolute bottom-2 left-2 right-2">
+            <h3 class="bg-white font-semibold text-xl inline">The importance of learning first aid: 5 reasons to learn</h3>
+          </div>
+        </div>
+        <div class="h-96 relative">
+          <img src="./assets/team_1.jpg" class="w-full h-full object-cover">
+          <div class=" absolute bottom-2 left-2 right-2">
+            <h3 class="bg-white font-semibold text-xl inline">What is the difference between leadership and management?</h3>
+          </div>
+        </div>
+        <div class="h-96 relative">
+          <img src="./assets/team_2.jpg" class="w-full h-full object-cover">
+          <div class=" absolute bottom-2 left-2 right-2">
+            <h3 class="bg-white font-semibold text-xl inline">Traditional marketing vs digital marketing: Which should you use?</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="h-0.5 bg-lightGray w-[90vw] mx-auto mt-10"></div>
 
+    <div class="container mx-auto mt-10">
+      <div class="grid grid-cols-4 gap-6">
+        <div class="flex flex-col items-center gap-4">
+          <h3 class="text-primary font-semibold text-xl">Subjects</h3>
+          <p class="text-center">Courses grouped by subject</p>
+        </div>
+        <div class="flex flex-col items-center gap-4">
+          <h3 class="text-primary font-semibold text-xl">Short courses</h3>
+          <p class="text-center">Learn new skills with a flexible online course</p>
+        </div>
+        <div class="flex flex-col items-center gap-4">
+          <h3 class="text-primary font-semibold text-xl">Microcredentials</h3>
+          <p class="text-center">Earn professional or academic accreditation</p>
+        </div>
+        <div class="flex flex-col items-center gap-4">
+          <h3 class="text-primary font-semibold text-xl">Online degrees</h3>
+          <p class="text-center">Study flexibly online as you build to a degree</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="p-24"></div>
+  <section id="join" class="bg-lightGray mt-10">
+    <div class="container mx-auto grid grid-cols-2 py-8">
+      <div>
+        <h3 class="text-2xl"><span class="font-semibold italic">Join</span> FutureLearn <span class="font-semibold italic">today</span></h3>
+      </div>
+      <div>
+        <p class="font-medium">Register for a FutureLearn account to get personalised course recommendations and offers straight to your inbox.</p>
+        <button class="btn border-none">Sign up now</button>
+      </div>
+    </div>
+
+  </section>
+
+  <footer id="footer">
+    <div class="bg-darkGray py-5">
+      <div class="container mx-auto grid grid-cols-6 gap-16">
+        <ul class="text-white flex flex-col gap-4">
+          <div>
+            <h4 class="text-lg font-semibold pb-2">About FutureLearn</h4>
+          </div>
+          <li><a href="#">Our values</a></li>
+          <li><a href="#">Our advisory board</a></li>
+          <li><a href="#">Become a partner</a></li>
+          <li><a href="#">Work at FutureLearn</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <ul class="text-white flex flex-col gap-4">
+          <div>
+            <h4 class="text-lg font-semibold pb-2">Using FutureLearn</h4>
+          </div>
+          <li><a href="#">Using our platform</a></li>
+          <li><a href="#">FutureLearn</a></li>
+          <li><a href="#">Certificates</a></li>
+          <li><a href="#">Unlimited</a></li>
+          <li><a href="#">Microcredentials</a></li>
+          <li><a href="#">ExpertTracks</a></li>
+        </ul>
+        <ul class="text-white flex flex-col gap-4">
+          <div>
+            <h4 class="text-lg font-semibold pb-2">Need some help?</h4>
+          </div>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Child safety</a></li>
+          <li><a href="#">Help Centre</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        
+        <ul class="text-white flex flex-col gap-4">
+          <div>
+            <h4 class="text-lg font-semibold pb-2">Popular Subjects</h4>
+          </div>
+          <li><a href="#">Business and Management</a></li>
+          <li><a href="#">healthcare and Medicine</a></li>
+          <li><a href="#">Teaching</a></li>
+          <li><a href="#">Psychology and Mental Health</a></li><li><a href="#">IT and Computer Science</a></li>
+          <li><a href="#">Featured courses</a></li>
+        </ul>
+
+        <ul class="text-white flex flex-col gap-4">
+          <div>
+            <h4 class="text-lg font-semibold pb-2">Developing Skills</h4>
+          </div>
+          <li><a href="#">FutureLearn for Business</a></li>
+          <li><a href="#">FutureLearn Schools</a></li>
+          <li><a href="#">Course collections</a></li>
+          <li><a href="#">Career advice</a></li>
+        </ul>
+        
+        <ul class="text-white flex flex-col gap-4">
+          <div>
+            <h4 class="text-lg font-semibold pb-2">Small Print</h4>
+          </div>
+          <li><a href="#">T&Cs</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Refund policy</a></li>
+          <li><a href="#">Cookie policy</a></li>
+          <li><a href="#">Code of conduct</a></li>
+          <li><a href="#">Accessibility policy</a></li>
+          <li><a href="#">Sitemap</a></li>
+          <li><a href="#">Open steps sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-footer p-5">
+      <div class="container mx-auto text-white flex justify-between items-center">
+        <div class="flex gap-4">
+          <i class="fa-brands fa-facebook text-2xl"></i>
+          <i class="fa-brands fa-instagram text-2xl"></i>
+          <i class="fa-brands fa-twitter text-2xl"></i>
+          <i class="fa-brands fa-youtube text-2xl"></i>
+          <i class="fa-brands fa-linkedin text-2xl"></i>
+        </div>
+        <div>
+          <a href="#"><h1 class="text-3xl font-semibold">Loop.io</h1></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://kit.fontawesome.com/0e43870383.js" crossorigin="anonymous"></script>
 
