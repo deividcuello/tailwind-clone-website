@@ -9,6 +9,23 @@
     "d e f";
 }
 
+.grid-area-md{
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "e f";
+}
+
+.grid-area-sm{
+    grid-template-areas: 
+    "a"
+    "b"
+    "c"
+    "d"
+    "e"
+    "f";
+}
+
 .area-a{
     grid-area: a;
 }
@@ -40,5 +57,8 @@
     li{
         @apply list-none
     }
-    
+
+    input{
+        @apply outline-none
+    }
 }

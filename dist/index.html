@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="text-[62.5%] md:text-[100%]">
+<html class="text-[62.5%] md:text-[82.5%] lg:text-[100%]">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,31 +10,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="p-2">
+  <header class="p-2 fixed md:static left-0 right-0 top-0 z-[100] bg-white">
     <nav>
       <ul class="container mx-auto flex justify-between items-center">
-        <div class="flex items-center justify-between gap-10">
+        <div class="flex items-center justify-between gap-10 z-[100]">
           <a href="#"><h1 class="text-3xl font-semibold">Loop.io</h1></a>
-          <ul class="flex gap-10 items-center justify-between">
-            <li><a href="#" class="text-primary text-lg font-semibold">Subjects <i class="fa-solid fa-chevron-down"></i></a></li>
-            <li><a href="#" class="text-primary text-lg font-semibold">Courses <i class="fa-solid fa-chevron-down"></i></a></li>
-            <li><a href="#" class="text-primary text-lg font-semibold">FutureLearn for business</a></li>
+          <ul class="flex gap-5 flex-col md:flex-row items-start md:items-center justify-start md:justify-between md:static absolute w-[10rem] md:w-fit left-0 top-[100%] h-screen md:h-auto bg-white px-5">
+            <li><a href="#" class="text-primary text-base font-semibold">Subjects <i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#" class="text-primary text-base font-semibold">Courses <i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#" class="text-primary text-base font-semibold">FutureLearn for business</a></li>
           </ul>
         </div>
         <div class="flex gap-8 items-center">
-          <div class="border border-gray">
-            <input type="text" placeholder="Search" class="p-1">
-            <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer bg-primary p-2 text-white"></i>
+          <div class="border-none md:border md:border-gray flex">
+            <input type="text" placeholder="Search" class="p-1 hidden lg:inline-block">
+            <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer bg-primary p-2 text-white scale-0 absolute md:scale-100 md:static"></i>
           </div>
-          <i class="fa-solid fa-bars text-xl cursor-pointer scale-0 absolute"></i>
-          <button class="text-primary font-semibold">Sign in</button>
-          <button class="btn">Register</button>
+          <i class="fa-solid fa-bars text-xl cursor-pointer static scale-100 md:scale-0 md:absolute"></i>
+          <button class="text-primary font-semibold hidden sm:inline-block">Sign in</button>
+          <button class="btn hidden sm:inline-block">Register</button>
         </div>
       </ul>
     </nav>
   </header>
 
-  <div class="bg-secundary w-full h-[30rem] p-2">
+  <div class="bg-secundary w-full h-[30rem] p-2 pt-14">
     <div class="z-[1] container relative h-full mx-auto after:contents-[''] after:bg-[url('./assets/stepping_up.svg')] after:absolute after:inline-block after:w-96 after:h-96 after:bg-no-repeat after:bg-contain after:top-0 after:right-0 after:z-[-1] after:brightness-50">
       <div class="h-full grid grid-cols-1 md:grid-cols-2 justify-items-start md:justify-items-center items-center">
         <div class="self-center">
@@ -359,7 +359,7 @@
           <a href="#">Microcredentials</a>
           <a href="#">Online Degrees</a>
         </div>
-        <div class="grid grid-cols-4 gap-10 text-white">
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10 text-white">
           <div class="flex flex-col gap-16">
             <div>
               <span class="text-3xl font-semibold pb-2 inline-block">1</span>
@@ -399,7 +399,7 @@
       <div class="max-w-md flex flex-col gap-8 mt- items-start">
         <h2 class="text-3xl relative inline-block after:contents-[''] after:absolute after:w-14 after:h-1 after:bg-primary after:top-[110%] after:left-0">Why FutureLearn?</h2>
       </div>
-      <div class="grid grid-cols-3 gap-8 grid-area">
+      <div class="microcredentials-items grid grid-cols-3 gap-8 grid-area">
         <div class="shadow-md p-5 area-a">
           <i class="fa-solid fa-heart text-4xl text-primary"></i>
           <h3 class="text-xl font-semibold">Learn together</h3>
@@ -523,7 +523,7 @@
         <div class="flex justify-center">
           <h2 class="text-3xl relative text-white mx-auto inline-block after:contents-[''] after:absolute after:w-14 after:h-1 after:bg-primary after:top-[110%] after:left-1/2 after:-translate-x-1/2">Explore top subject</h2>
         </div>
-        <div class="grid grid-cols-3 gap-10 mt-7">
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10 mt-7">
           <div class="bg-white flex flex-col justify-between p-5 rounded gap-5">
             <div class="flex flex-col gap-3">
               <h3 class="text-primary font-semibold text-xl">Business & Management</h3>
@@ -550,7 +550,7 @@
     </div>
   </section>
 
-  <section id="avg-rating">
+  <section id="latest-news">
     
     <div class="container mx-auto mt-14 px-2">
       <div class="max-w-md flex flex-col gap-8 items-start">
@@ -559,26 +559,26 @@
         <button class="btn">Read more stories</button>
       </div>
       <div class="grid grid-cols-1 items-start sm:grid-cols-2 md:grid-cols-4 gap-6 mt-[2rem]">
-        <div class="h-96 relative">
-          <img src="./assets/team_1.jpg" class="w-full h-full object-cover">
+        <div class="h-96 relative overflow-hidden cursor-pointer">
+          <img src="./assets/team_1.jpg" class="w-full h-full object-cover hover:scale-110 transition-all">
           <div class=" absolute bottom-2 left-2 right-2">
             <h3 class="bg-white font-semibold text-xl inline">What is a sustainable business?</h3>
           </div>
         </div>
-        <div class="h-96 relative">
-          <img src="./assets/team_2.jpg" class="w-full h-full object-cover">
+        <div class="h-96 relative overflow-hidden cursor-pointer">
+          <img src="./assets/team_2.jpg" class="w-full h-full object-cover hover:scale-110 transition-all">
           <div class=" absolute bottom-2 left-2 right-2">
             <h3 class="bg-white font-semibold text-xl inline">The importance of learning first aid: 5 reasons to learn</h3>
           </div>
         </div>
-        <div class="h-96 relative">
-          <img src="./assets/team_1.jpg" class="w-full h-full object-cover">
+        <div class="h-96 relative overflow-hidden cursor-pointer">
+          <img src="./assets/team_1.jpg" class="w-full h-full object-cover hover:scale-110 transition-all">
           <div class=" absolute bottom-2 left-2 right-2">
             <h3 class="bg-white font-semibold text-xl inline">What is the difference between leadership and management?</h3>
           </div>
         </div>
-        <div class="h-96 relative">
-          <img src="./assets/team_2.jpg" class="w-full h-full object-cover">
+        <div class="h-96 relative overflow-hidden cursor-pointer">
+          <img src="./assets/team_2.jpg" class="w-full h-full object-cover hover:scale-110 transition-all">
           <div class=" absolute bottom-2 left-2 right-2">
             <h3 class="bg-white font-semibold text-xl inline">Traditional marketing vs digital marketing: Which should you use?</h3>
           </div>
@@ -588,7 +588,7 @@
     <div class="h-0.5 bg-lightGray w-[90vw] mx-auto mt-10"></div>
 
     <div class="container mx-auto mt-10">
-      <div class="grid grid-cols-4 gap-6">
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
         <div class="flex flex-col items-center gap-4">
           <h3 class="text-primary font-semibold text-xl">Subjects</h3>
           <p class="text-center">Courses grouped by subject</p>
@@ -610,7 +610,7 @@
   </section>
 
   <section id="join" class="bg-lightGray mt-10">
-    <div class="container mx-auto grid grid-cols-2 py-8">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 py-8">
       <div>
         <h3 class="text-2xl"><span class="font-semibold italic">Join</span> FutureLearn <span class="font-semibold italic">today</span></h3>
       </div>
@@ -624,7 +624,7 @@
 
   <footer id="footer">
     <div class="bg-darkGray py-5">
-      <div class="container mx-auto grid grid-cols-6 gap-16">
+      <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-16 px-2">
         <ul class="text-white flex flex-col gap-4">
           <div>
             <h4 class="text-lg font-semibold pb-2">About FutureLearn</h4>
@@ -709,6 +709,46 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const menuBar = document.querySelector('.fa-bars')
+    const menuLinks = document.querySelector('ul ul')
+    const microcredentials = document.querySelector('.microcredentials-items')
+    
+    window.addEventListener('DOMContentLoaded', () => {
+      if(window.innerWidth < 768){
+        menuLinks.classList.add('hidden')
+      }
+    })
+
+    menuBar.addEventListener('click', () => {
+      menuLinks.classList.toggle('hidden')
+    })
+    
+    window.addEventListener('resize', () => {
+      console.log(window.innerWidth)
+      if(window.innerWidth >= 768){
+        menuLinks.classList.remove('hidden')
+        microcredentials.classList.remove('grid-area-md')
+        microcredentials.classList.remove('grid-area-sm')
+        microcredentials.classList.add('grid-area')
+      }
+
+      if(window.innerWidth < 768){
+        menuLinks.classList.add('hidden')
+        microcredentials.classList.remove('grid-area')
+        microcredentials.classList.remove('grid-sm')
+        microcredentials.classList.add('grid-area-md')
+      }
+
+      if(window.innerWidth < 640){
+        menuLinks.classList.add('hidden')
+        microcredentials.classList.remove('grid-area')
+        microcredentials.classList.remove('grid-area-md')
+        microcredentials.classList.add('grid-area-sm')
+      }
+    })
+  </script>
 
   <script src="https://kit.fontawesome.com/0e43870383.js" crossorigin="anonymous"></script>
 
