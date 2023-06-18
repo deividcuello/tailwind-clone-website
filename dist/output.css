@@ -956,6 +956,10 @@ video {
   font-size: 100%;
 }
 
+.text-\[1\.5vw\] {
+  font-size: 1.5vw;
+}
+
 .font-bold {
   font-weight: 700;
 }
